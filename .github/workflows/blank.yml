@@ -32,3 +32,6 @@ jobs:
         run: |
           echo "This is the platform value: ${{env.platform}}"
           echo "This is the Account value: ${{env.account}}"
+      - name: "Show default variables"
+        run: |
+          echo "Event: ${{toJSON(github.event)}}"
